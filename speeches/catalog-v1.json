@@ -1,0 +1,66 @@
+{
+  "version": 1,
+  "weeks": [
+    {
+      "week": "2026-11-16",
+      "speeches": [
+        {
+          "id": "fed-cook20261120a",
+          "title": "The U.S. Economy in Global Context",
+          "speaker": "Governor Lisa D. Cook",
+          "date": "2026-11-20",
+          "sourceUrl": "https://www.federalreserve.gov/newsevents/speech/cook20261120a.htm",
+          "epub": "fed-cook20261120a.epub"
+        },
+        {
+          "id": "fed-waller20261120a",
+          "title": "Opening Remarks",
+          "speaker": "Governor Christopher J. Waller",
+          "date": "2026-11-20",
+          "sourceUrl": "https://www.federalreserve.gov/newsevents/speech/waller20261120a.htm",
+          "epub": "fed-waller20261120a.epub"
+        },
+        {
+          "id": "fed-jefferson20261119a",
+          "title": "Monetary Policy amid Frequent and Complex Shocks",
+          "speaker": "Vice Chair Philip N. Jefferson",
+          "date": "2026-11-19",
+          "sourceUrl": "https://www.federalreserve.gov/newsevents/speech/jefferson20261119a.htm",
+          "epub": "fed-jefferson20261119a.epub"
+        },
+        {
+          "id": "fed-barr20261118a",
+          "title": "Investing in America’s Underserved Communities",
+          "speaker": "Governor Michael S. Barr",
+          "date": "2026-11-18",
+          "sourceUrl": "https://www.federalreserve.gov/newsevents/speech/barr20261118a.htm",
+          "epub": "fed-barr20261118a.epub"
+        },
+        {
+          "id": "fed-waller20261117a",
+          "title": "Considerations at the Intersection of Payments and Tokenized Markets",
+          "speaker": "Governor Christopher J. Waller",
+          "date": "2026-11-17",
+          "sourceUrl": "https://www.federalreserve.gov/newsevents/speech/waller20261117a.htm",
+          "epub": "fed-waller20261117a.epub"
+        },
+        {
+          "id": "fed-warsh20261116a",
+          "title": "Opening Remarks",
+          "speaker": "Chairman Kevin Warsh",
+          "date": "2026-11-16",
+          "sourceUrl": "https://www.federalreserve.gov/newsevents/speech/warsh20261116a.htm",
+          "epub": "fed-warsh20261116a.epub"
+        },
+        {
+          "id": "fed-barr20261116a",
+          "title": "Some Potential Financial Stability Implications of Artificial Intelligence",
+          "speaker": "Governor Michael S. Barr",
+          "date": "2026-11-16",
+          "sourceUrl": "https://www.federalreserve.gov/newsevents/speech/barr20261116a.htm",
+          "epub": "fed-barr20261116a.epub"
+        }
+      ]
+    }
+  ]
+}
