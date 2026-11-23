@@ -1,8 +1,9 @@
-const APP_VERSION = "2.2.0";
-const CACHE_NAME = 'readflow-f8619c5bb1c0d27c';
-const OFFLINE_PATHS = ["/manifest.webmanifest","/icon-192.png","/icon-512.png","/apple-touch-icon.png","/readflow-sample.epub","/dictionary/finance-v1.json","/_next/static/1FY1nAyP-DhYQRHvdLRWd/_buildManifest.js","/_next/static/1FY1nAyP-DhYQRHvdLRWd/_clientMiddlewareManifest.js","/_next/static/1FY1nAyP-DhYQRHvdLRWd/_ssgManifest.js","/_next/static/chunks/08o_k-4cvafb7.js","/_next/static/chunks/0cz1d0mv5g_q7.js","/_next/static/chunks/0j1we3cwg31qe.js","/_next/static/chunks/0tvqmc2uq7jck.js","/_next/static/chunks/1-_4_l553m6o5.js","/_next/static/chunks/11iyqs7hauntt.js","/_next/static/chunks/1nznowgsgtpt9.js","/_next/static/chunks/1rihuxxdfe9g-.js","/_next/static/chunks/2qgpm5u0_ww49.js","/_next/static/chunks/3d1c88ytxgobl.js","/_next/static/chunks/3qfy96eoyh-ek.js","/_next/static/chunks/3rj2s5is8hwl-.css","/_next/static/chunks/turbopack-2u1d16houkiyo.js"];
+const APP_VERSION = "2.3.0";
+const CACHE_NAME = 'readflow-f384849ce07855aa';
+const OFFLINE_PATHS = ["/manifest.webmanifest","/icon-192.png","/icon-512.png","/apple-touch-icon.png","/readflow-sample.epub","/dictionary/finance-v1.json","/dictionary/ecdict-v1/manifest.json","/_next/static/chunks/08o_k-4cvafb7.js","/_next/static/chunks/0cz1d0mv5g_q7.js","/_next/static/chunks/0j1we3cwg31qe.js","/_next/static/chunks/0tvqmc2uq7jck.js","/_next/static/chunks/1-_4_l553m6o5.js","/_next/static/chunks/11iyqs7hauntt.js","/_next/static/chunks/1f6fsl6ez0-x0.css","/_next/static/chunks/1nznowgsgtpt9.js","/_next/static/chunks/1rihuxxdfe9g-.js","/_next/static/chunks/2qgpm5u0_ww49.js","/_next/static/chunks/3a1mzd0nm4kwl.js","/_next/static/chunks/3qfy96eoyh-ek.js","/_next/static/chunks/turbopack-2u1d16houkiyo.js","/_next/static/rv_3ueXErCBntWdfyJxzd/_buildManifest.js","/_next/static/rv_3ueXErCBntWdfyJxzd/_clientMiddlewareManifest.js","/_next/static/rv_3ueXErCBntWdfyJxzd/_ssgManifest.js"];
 const offlinePaths = new Set(OFFLINE_PATHS);
 const DICTIONARY_CACHE = 'readflow-dictionary-v1';
+const ECDICT_CACHE = 'readflow-ecdict-v1';
 const SPEECH_CATALOG = '/speeches/catalog-v1.json';
 const SPEECH_CATALOG_CACHE = 'readflow-speech-catalog-v1';
 
@@ -87,13 +88,16 @@ self.addEventListener('fetch', (event) => {
     return;
   }
 
-  if (!url.search && /^\/dictionary\/wordnet-v1\/[a-z0-9_-]+\.json$/i.test(url.pathname)) {
+  const dictionaryCache = /^\/dictionary\/ecdict-v1\/[a-f0-9]{3,4}\.json$/.test(url.pathname)
+    ? ECDICT_CACHE
+    : /^\/dictionary\/wordnet-v1\/[a-z0-9_-]+\.json$/i.test(url.pathname) ? DICTIONARY_CACHE : undefined;
+  if (!url.search && dictionaryCache) {
     event.respondWith((async () => {
-      const cache = await caches.open(DICTIONARY_CACHE);
+      const cache = await caches.open(dictionaryCache);
       const cached = await cache.match(request);
       if (cached) return cached;
       const response = await fetch(request);
-      if (response.ok) {
+      if (response.ok && response.headers.get('content-type')?.includes('application/json')) {
         try {
           await cache.put(request, response.clone());
         } catch {

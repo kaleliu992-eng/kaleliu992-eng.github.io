@@ -1,0 +1,20 @@
+ReadFlow ECDICT dictionary v1
+
+Source: https://github.com/skywind3000/ECDICT/blob/39cfb9672c0906b63569e0453c2e6abfb9ab182a/ecdict.csv
+Source commit: 39cfb9672c0906b63569e0453c2e6abfb9ab182a
+Source CSV SHA-256: d1ecbdf9ee2b920afb6f430ca6b6bb9f559588cf0dff86e04bd255f9390843cc
+Upstream MIT license: https://github.com/skywind3000/ECDICT/blob/39cfb9672c0906b63569e0453c2e6abfb9ab182a/LICENSE
+License SHA-256: f8552dd246f61a4e064569eae6194a01c6b3d63b03bf27c6ca863593c549ed0f
+The full upstream copyright and permission notice is supplied in LICENSE.txt.
+
+ReadFlow selects word, phonetic, part-of-speech statistics, Chinese and English
+definition text, and inflections from the source CSV. Lookup keys are normalized,
+duplicate lookup keys retain the first usable row, and backslash-escaped line
+breaks are decoded. Inflection aliases are generated from ECDICT's exchange column.
+Chinese and English definitions keep their independent source ordering.
+
+The ECDICT maintainer states the dictionary may be bundled in an offline app
+under MIT. The project combines data from multiple sources and no longer has
+entry-level source records. The upstream permissions have not all been verified.
+Maintainer discussion: https://github.com/skywind3000/ECDICT/issues/134
+Upstream sources: https://github.com/skywind3000/ECDICT/wiki/双解释义
