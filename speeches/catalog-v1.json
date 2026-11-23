@@ -2,6 +2,67 @@
   "version": 1,
   "weeks": [
     {
+      "week": "2026-11-23",
+      "speeches": [
+        {
+          "id": "fed-jefferson20261113a",
+          "title": "New Technology, Old Questions: Productivity Puzzles and the Macroeconomy",
+          "speaker": "Vice Chair Philip N. Jefferson",
+          "date": "2026-11-13",
+          "sourceUrl": "https://www.federalreserve.gov/newsevents/speech/jefferson20261113a.htm",
+          "epub": "fed-jefferson20261113a.epub"
+        },
+        {
+          "id": "fed-barr20261112a",
+          "title": "American Inequality and the Future of AI",
+          "speaker": "Governor Michael S. Barr",
+          "date": "2026-11-12",
+          "sourceUrl": "https://www.federalreserve.gov/newsevents/speech/barr20261112a.htm",
+          "epub": "fed-barr20261112a.epub"
+        },
+        {
+          "id": "fed-bowman20261110a",
+          "title": "The U.S. Economy and Considerations for Monetary Policy",
+          "speaker": "Vice Chair for Supervision Michelle W. Bowman",
+          "date": "2026-11-10",
+          "sourceUrl": "https://www.federalreserve.gov/newsevents/speech/bowman20261110a.htm",
+          "epub": "fed-bowman20261110a.epub"
+        },
+        {
+          "id": "fed-waller20261110a",
+          "title": "The Economic Outlook and Some Thoughts on Labor Market Dynamism",
+          "speaker": "Governor Christopher J. Waller",
+          "date": "2026-11-10",
+          "sourceUrl": "https://www.federalreserve.gov/newsevents/speech/waller20261110a.htm",
+          "epub": "fed-waller20261110a.epub"
+        },
+        {
+          "id": "fed-bowman20261014a",
+          "title": "Supervisory Modernization After Silicon Valley Bank",
+          "speaker": "Vice Chair for Supervision Michelle W. Bowman",
+          "date": "2026-10-14",
+          "sourceUrl": "https://www.federalreserve.gov/newsevents/speech/bowman20261014a.htm",
+          "epub": "fed-bowman20261014a.epub"
+        },
+        {
+          "id": "fed-waller20261008a",
+          "title": "The Signaling Value of the Summary of Economic Projections",
+          "speaker": "Governor Christopher J. Waller",
+          "date": "2026-10-08",
+          "sourceUrl": "https://www.federalreserve.gov/newsevents/speech/waller20261008a.htm",
+          "epub": "fed-waller20261008a.epub"
+        },
+        {
+          "id": "fed-bowman20261006a",
+          "title": "Modernizing the Regulatory and Supervisory Landscape",
+          "speaker": "Vice Chair for Supervision Michelle W. Bowman",
+          "date": "2026-10-06",
+          "sourceUrl": "https://www.federalreserve.gov/newsevents/speech/bowman20261006a.htm",
+          "epub": "fed-bowman20261006a.epub"
+        }
+      ]
+    },
+    {
       "week": "2026-11-16",
       "speeches": [
         {
