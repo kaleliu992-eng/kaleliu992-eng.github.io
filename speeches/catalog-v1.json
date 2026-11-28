@@ -5,6 +5,14 @@
       "week": "2026-11-23",
       "speeches": [
         {
+          "id": "fed-bowman20261125a",
+          "title": "Modernizing Banking Supervision: A Shared Agenda for the Americas",
+          "speaker": "Vice Chair for Supervision Michelle W. Bowman",
+          "date": "2026-11-25",
+          "sourceUrl": "https://www.federalreserve.gov/newsevents/speech/bowman20261125a.htm",
+          "epub": "fed-bowman20261125a.epub"
+        },
+        {
           "id": "fed-jefferson20261113a",
           "title": "New Technology, Old Questions: Productivity Puzzles and the Macroeconomy",
           "speaker": "Vice Chair Philip N. Jefferson",
@@ -51,14 +59,6 @@
           "date": "2026-10-08",
           "sourceUrl": "https://www.federalreserve.gov/newsevents/speech/waller20261008a.htm",
           "epub": "fed-waller20261008a.epub"
-        },
-        {
-          "id": "fed-bowman20261006a",
-          "title": "Modernizing the Regulatory and Supervisory Landscape",
-          "speaker": "Vice Chair for Supervision Michelle W. Bowman",
-          "date": "2026-10-06",
-          "sourceUrl": "https://www.federalreserve.gov/newsevents/speech/bowman20261006a.htm",
-          "epub": "fed-bowman20261006a.epub"
         }
       ]
     },
